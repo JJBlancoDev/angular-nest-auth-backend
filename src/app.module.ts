@@ -8,9 +8,7 @@ import { AuthModule } from './auth/auth.module';
   imports: [
     ConfigModule.forRoot(),
     AuthModule,
-    MongooseModule.forRoot(process.env.MONGO_URL, {
-      dbName: process.env.MONGO_DB_NAME
-    }),
+    MongooseModule.forRoot(process.env.MONGO_URL),
   ],
   controllers: [],
   providers: [],
